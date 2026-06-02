@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: devices_rag_app
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/devices
+      database: devices
+  ai:
+    vectorstore:
+      mongodb:
+        initialize-schema: false
+    openai:
+      api-key: {OPEN_API_KEY}
+      chat:
+        options:
+          model: gpt-3.5-turbo
