@@ -9,6 +9,9 @@ spring:
     vectorstore:
       mongodb:
         initialize-schema: true
+        collection-name: devices_vector_store
+        path-name: embedding
+        index-name: devices_vector_index
     #OpenAI - Configuration
     #openai:
       #api-key: {OPENAI_API_KEY}
