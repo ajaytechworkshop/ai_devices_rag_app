@@ -8,9 +8,23 @@ spring:
   ai:
     vectorstore:
       mongodb:
-        initialize-schema: false
-    openai:
-      api-key: {OPEN_API_KEY}
+        initialize-schema: true
+    #OpenAI - Configuration
+    #openai:
+      #api-key: {OPENAI_API_KEY}
+      #chat:
+        #options:
+          #model: gpt-3.5-turbo
+    #Embeddings
+    model:
+      embedding: ollama
+   # Ollama - Configuration
+    ollama:
+      base-url: http://localhost:11434
       chat:
         options:
-          model: gpt-3.5-turbo
+          model: gemma3:latest
+          temperature: 0.7
+      embedding:
+        options:
+          model: nomic-embed-text
