@@ -3,7 +3,7 @@ spring:
     name: devices_rag_app
   data:
     mongodb:
-      uri: mongodb://localhost:27017/devices
+      uri: mongodb+srv://atw:atw@ai-cluster.osbvqyw.mongodb.net/?appName=ai-cluster
       database: devices
   ai:
     vectorstore:
